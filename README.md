@@ -20,7 +20,7 @@ key3 = 'value3'
 ```py
 import ini
 
-text = open('config.ini', 'r')
+text = open('config.ini', 'r').read()
 
 config = ini.parse(text)
 
