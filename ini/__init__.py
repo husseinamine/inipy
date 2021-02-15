@@ -30,3 +30,15 @@ def parse(text):
                 data[section][key] = value
 
     return data
+
+def convert(data):
+    text = ""
+    for section in data:
+        text += "[%s]\n" % section
+
+        for key in data[section]:
+            text += "%s = %s\n" % (key, data[section][key])
+
+        text += "\n"
+
+    return text

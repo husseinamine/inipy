@@ -28,6 +28,27 @@ section = config['section']
 
 print(section['key'], section['key2'], section['key3'])
 ```
-
 > output 
-`value value2 value3`
+```
+value value2 value3
+```
+
+----------------------------------------
+
+# converting python dict to ini
+```py
+import ini
+
+config = ini.convert({"section": {"key": "value"}, "section2": {"key2": "value2"}})
+
+
+print(config)
+```
+> output
+```ini
+[section]
+key = value
+
+[section2]
+key2 = value2
+```
