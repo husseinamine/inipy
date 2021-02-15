@@ -41,4 +41,4 @@ def convert(data):
 
         text += "\n"
 
-    return text
+    return text.strip()
