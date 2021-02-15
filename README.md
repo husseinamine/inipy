@@ -1,5 +1,10 @@
 # a lightweight ini parser
 
+# how to install 
+```sh
+pip install ini.py
+```
+
 > converts an ini file to a python dictionary
 
 ## example ini file
