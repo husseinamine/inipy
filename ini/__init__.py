@@ -17,8 +17,7 @@ def parse(text):
 
         else:
             if "=" in line:
-                key, value = line.split('=')
-            
+                key, value = line.split("=")[0], "=".join(line.split("=")[1:])              
                 key = key.replace("\"", "")
                 key = key.replace("\'", "")
                 key = key.strip()
